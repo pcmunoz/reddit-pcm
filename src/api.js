@@ -2,7 +2,5 @@ var snoowrap = require('snoowrap');
 
 export const API_REQUEST = new snoowrap({
   userAgent: 'reddit-pcm:v1.2.3 (by /u/pcmunoz)',
-  accessToken: '-JRDGCulkpixuSVHqJfkJluWG_SU'
+  accessToken: '-t6ebQMRnsvBNeMKrB2TEZkYb7tE'
 })
-
-export const hotList = API_REQUEST.getHot();

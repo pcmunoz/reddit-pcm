@@ -2,7 +2,7 @@ import React from 'react';
 import { List, Image, Header, Grid, Label } from 'semantic-ui-react'
 import { numFormatter, imgSrc, fromNow} from '../common';
 
-const HomeItem = ({item}) => 
+const CommentItem = ({comment}) => 
     <List.Item>
         <List.Content>
             <Grid>
@@ -23,6 +23,5 @@ const HomeItem = ({item}) =>
             </Grid>
         </List.Content>
     </List.Item>
-;
 
-export default HomeItem;
+export default CommentItem;
