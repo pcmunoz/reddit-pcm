@@ -9,7 +9,6 @@ const getSort = sort => sort === CONFIDENCE ? 'Best': capitalFirstLetter(sort);
 
 const DetailContainer = ({ submission, sort, handleItemClick }) =>
     <Grid container style={{ padding: '5em 0em' }}>
-        {console.log(submission)}
         <Grid.Row>
             <Grid.Column>
             <Header as='h1' dividing>

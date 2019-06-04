@@ -1,3 +1,12 @@
+REDDIT-PCM
+
+Please modify src/api.js for accessToken
+
+[Access Token Reference](https://not-an-aardvark.github.io/reddit-oauth-helper/)
+
+TODO:
+- Reply count incorrect causing errors in rendering replies.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
