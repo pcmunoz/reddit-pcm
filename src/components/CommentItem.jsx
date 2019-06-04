@@ -22,7 +22,6 @@ const getCount = replies => {
 const CommentItem = ({comment, handleViewReply, replies}) => 
     <List.Item>
         <List.Content>
-            {console.log(comment)}
             <Grid container style={{'padding':'2em'}}>
                 <Grid.Column width={1}>
                     <Header><Icon name='angle up' /></Header>

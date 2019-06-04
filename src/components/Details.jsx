@@ -1,6 +1,7 @@
 import React from 'react';
-import { Label, Grid, Header, Image } from 'semantic-ui-react'
+import { Label, Grid, Header, Image, Dropdown, Icon } from 'semantic-ui-react'
 import { numFormatter,imgSrc, fromNow } from '../common';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 const Details = ({submission}) => 
     <Grid container style={{ padding: '5em 0em' }}>
@@ -21,6 +22,15 @@ const Details = ({submission}) =>
             <Grid.Column>
                 <Header.Subheader>
                     <Label>{numFormatter(submission.num_comments)} Comments</Label>
+                    <Icon name='share'/>
+                    <Dropdown text='Share' floating>
+                        <Dropdown.Menu>
+                            <CopyToClipboard text={window.location.href}>
+                                <Dropdown.Item icon='chain' text='Copy Link' />
+                            </CopyToClipboard>
+                            <Dropdown.Item icon='code' text='Embed' />
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </Header.Subheader>
             </Grid.Column>
         </Grid.Row>
