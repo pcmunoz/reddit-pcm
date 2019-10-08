@@ -1,7 +1,8 @@
 import React from 'react';
-import { Dropdown, Grid, Header, List, Loader, Dimmer } from 'semantic-ui-react'
+import { Dropdown, Grid, Header, List, Loader, Dimmer, Menu } from 'semantic-ui-react'
 import HomeItem from './HomeItem';
 import {SUBMISSION_LIST} from '../constants';
+import MenuContainer from '../containers/MenuContainer';
 
 const Home = ({list, sort, handleItemClick}) => 
     <Grid container style={{ padding: '5em 0em' }}>
@@ -10,6 +11,7 @@ const Home = ({list, sort, handleItemClick}) =>
                 <Header as='h1' dividing>
                     Reddit PCM - Home
                 </Header>
+                <MenuContainer activeItem={'home'}/>
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>

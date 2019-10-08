@@ -4,6 +4,7 @@ import { Dropdown, Grid, Header, Dimmer, Loader } from 'semantic-ui-react'
 import { COMMENT_LIST, CONFIDENCE } from '../constants';
 import { capitalFirstLetter } from '../common';
 import Comments from './Comments';
+import MenuContainer from '../containers/MenuContainer';
 
 const getSort = sort => sort === CONFIDENCE ? 'Best': capitalFirstLetter(sort);
 
@@ -11,9 +12,10 @@ const DetailContainer = ({ submission, sort, handleItemClick }) =>
     <Grid container style={{ padding: '5em 0em' }}>
         <Grid.Row>
             <Grid.Column>
-            <Header as='h1' dividing>
-                Reddit PCM - Detail
-            </Header>
+                <Header as='h1' dividing>
+                    Reddit PCM - Detail
+                </Header>
+                <MenuContainer activeItem={'detail'}/>
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>
