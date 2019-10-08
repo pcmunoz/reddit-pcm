@@ -1,6 +1,6 @@
-REDDIT-PCM
+## REDDIT-PCM
 
-Please modify src/api.js for accessToken
+Please modify <b><u>src/api.js</u></b> for accessToken
 
 [Access Token Reference](https://not-an-aardvark.github.io/reddit-oauth-helper/)
 
